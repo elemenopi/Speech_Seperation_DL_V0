@@ -1,0 +1,16 @@
+matplotlib
+numpy
+scipy
+soundfile
+pyroomacoustics
+pyyaml
+torch
+torchvision
+torchaudio
+sounddevice
+librosa
+pysndfx
+tqdm
+argparse
+sox
+wandb

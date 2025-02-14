@@ -1,0 +1,257 @@
+Model initialized and moved to device.
+train_loss: []
+Train Epoch: 0 [0/9754 (0%)]     Loss: 815.013794
+Train Epoch: 0 [120/9754 (1%)]   Loss: 995.109503
+Train Epoch: 0 [240/9754 (2%)]   Loss: 1134.389139
+Train Epoch: 0 [360/9754 (4%)]   Loss: 1381.830042
+Train Epoch: 0 [480/9754 (5%)]   Loss: 1360.387137
+Train Epoch: 0 [600/9754 (6%)]   Loss: 1203.749817
+Train Epoch: 0 [720/9754 (7%)]   Loss: 1139.887372
+Train Epoch: 0 [840/9754 (9%)]   Loss: 743.283336
+Train Epoch: 0 [960/9754 (10%)]          Loss: 245.255034
+Train Epoch: 0 [1080/9754 (11%)]         Loss: 103.926090
+Train Epoch: 0 [1200/9754 (12%)]         Loss: 20.580287
+Train Epoch: 0 [1320/9754 (14%)]         Loss: 6.474711
+Train Epoch: 0 [1440/9754 (15%)]         Loss: 3.367349
+Train Epoch: 0 [1560/9754 (16%)]         Loss: 1.251498
+Train Epoch: 0 [1680/9754 (17%)]         Loss: 1.744812
+Train Epoch: 0 [1800/9754 (18%)]         Loss: 1.230538
+Train Epoch: 0 [1920/9754 (20%)]         Loss: 1.034328
+Train Epoch: 0 [2040/9754 (21%)]         Loss: 1.638627
+Train Epoch: 0 [2160/9754 (22%)]         Loss: 0.512022
+Train Epoch: 0 [2280/9754 (23%)]         Loss: 0.576539
+Train Epoch: 0 [2400/9754 (25%)]         Loss: 0.295517
+Train Epoch: 0 [2520/9754 (26%)]         Loss: 0.104483
+Train Epoch: 0 [2640/9754 (27%)]         Loss: 0.148889
+Train Epoch: 0 [2760/9754 (28%)]         Loss: 0.152998
+Train Epoch: 0 [2880/9754 (30%)]         Loss: 0.170013
+Train Epoch: 0 [3000/9754 (31%)]         Loss: 0.400699
+Train Epoch: 0 [3120/9754 (32%)]         Loss: 0.098775
+Train Epoch: 0 [3240/9754 (33%)]         Loss: 0.309348
+Train Epoch: 0 [3360/9754 (34%)]         Loss: 0.381629
+Train Epoch: 0 [3480/9754 (36%)]         Loss: 0.167231
+Train Epoch: 0 [3600/9754 (37%)]         Loss: 0.282204
+Train Epoch: 0 [3720/9754 (38%)]         Loss: 0.102793
+Train Epoch: 0 [3840/9754 (39%)]         Loss: 0.127597
+Train Epoch: 0 [3960/9754 (41%)]         Loss: 0.074888
+Train Epoch: 0 [4080/9754 (42%)]         Loss: 0.082418
+Train Epoch: 0 [4200/9754 (43%)]         Loss: 0.326902
+Train Epoch: 0 [4320/9754 (44%)]         Loss: 0.216650
+Train Epoch: 0 [4440/9754 (46%)]         Loss: 0.136656
+Train Epoch: 0 [4560/9754 (47%)]         Loss: 0.047541
+Train Epoch: 0 [4680/9754 (48%)]         Loss: 0.047808
+Train Epoch: 0 [4800/9754 (49%)]         Loss: 0.045936
+Train Epoch: 0 [4920/9754 (50%)]         Loss: 0.098884
+Train Epoch: 0 [5040/9754 (52%)]         Loss: 0.074806
+Train Epoch: 0 [5160/9754 (53%)]         Loss: 0.042509
+Train Epoch: 0 [5280/9754 (54%)]         Loss: 0.053794
+Train Epoch: 0 [5400/9754 (55%)]         Loss: 0.048005
+Train Epoch: 0 [5520/9754 (57%)]         Loss: 0.050216
+Train Epoch: 0 [5640/9754 (58%)]         Loss: 0.051852
+Train Epoch: 0 [5760/9754 (59%)]         Loss: 0.051091
+^CInterrupted
+
+
+6 layer 16 batch:
+
+Model initialized and moved to device.
+train_loss: []
+Train Epoch: 0 [0/11331 (0%)]    Loss: 482363.250000
+Train Epoch: 0 [320/11331 (3%)]          Loss: 671373.253125
+Train Epoch: 0 [640/11331 (6%)]          Loss: 1051758.793750
+Train Epoch: 0 [960/11331 (8%)]          Loss: 1672386.493750
+Train Epoch: 0 [1280/11331 (11%)]        Loss: 2398527.318750
+Train Epoch: 0 [1600/11331 (14%)]        Loss: 2856060.437500
+Train Epoch: 0 [1920/11331 (17%)]        Loss: 3419339.250000
+Train Epoch: 0 [2240/11331 (20%)]        Loss: 4785801.600000
+Train Epoch: 0 [2560/11331 (23%)]        Loss: 5480702.875000
+Train Epoch: 0 [2880/11331 (25%)]        Loss: 4618811.450000
+Train Epoch: 0 [3200/11331 (28%)]        Loss: 2342975.081250
+Train Epoch: 0 [3520/11331 (31%)]        Loss: 1529714.131250
+Train Epoch: 0 [3840/11331 (34%)]        Loss: 1477394.243750
+Train Epoch: 0 [4160/11331 (37%)]        Loss: 1122040.493750
+Train Epoch: 0 [4480/11331 (39%)]        Loss: 641552.165625
+Train Epoch: 0 [4800/11331 (42%)]        Loss: 399646.115625
+Train Epoch: 0 [5120/11331 (45%)]        Loss: 218148.465625
+Train Epoch: 0 [5440/11331 (48%)]        Loss: 243905.650781
+Train Epoch: 0 [5760/11331 (51%)]        Loss: 407208.631250
+Train Epoch: 0 [6080/11331 (54%)]        Loss: 509360.609375
+Train Epoch: 0 [6400/11331 (56%)]        Loss: 450497.654687
+Train Epoch: 0 [6720/11331 (59%)]        Loss: 178645.201172
+Train Epoch: 0 [7040/11331 (62%)]        Loss: 62793.646875
+Train Epoch: 0 [7360/11331 (65%)]        Loss: 53052.851367
+Train Epoch: 0 [7680/11331 (68%)]        Loss: 31182.316992
+Train Epoch: 0 [8000/11331 (71%)]        Loss: 26196.808789
+Train Epoch: 0 [8320/11331 (73%)]        Loss: 16507.796143
+Train Epoch: 0 [8640/11331 (76%)]        Loss: 5022.945520
+Train Epoch: 0 [8960/11331 (79%)]        Loss: 2473.867865
+Train Epoch: 0 [9280/11331 (82%)]        Loss: 1535.211600
+Train Epoch: 0 [9600/11331 (85%)]        Loss: 1212.958176
+Train Epoch: 0 [9920/11331 (87%)]        Loss: 637.705087
+Train Epoch: 0 [10240/11331 (90%)]       Loss: 791.501779
+Train Epoch: 0 [10560/11331 (93%)]       Loss: 378.576460
+Train Epoch: 0 [10880/11331 (96%)]       Loss: 409.641248
+Train Epoch: 0 [11200/11331 (99%)]       Loss: 365.375566
+train_loss: []
+train_loss: []
+Train Epoch: 1 [0/11331 (0%)]    Loss: 701.403381
+
+
+
+16 4 layer one epoch 
+../OUTPUTS_DSI/16_batch
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 0 [0/16 (0%)]       Loss: 33.265667
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 1 [0/16 (0%)]       Loss: 17.186619
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 2 [0/16 (0%)]       Loss: 9.939931
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 3 [0/16 (0%)]       Loss: 6.543524
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 4 [0/16 (0%)]       Loss: 4.037461
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 5 [0/16 (0%)]       Loss: 2.640235
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 6 [0/16 (0%)]       Loss: 1.949813
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 7 [0/16 (0%)]       Loss: 1.245116
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 8 [0/16 (0%)]       Loss: 0.987214
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 9 [0/16 (0%)]       Loss: 0.700854
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 10 [0/16 (0%)]      Loss: 0.528281
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 11 [0/16 (0%)]      Loss: 0.416075
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 12 [0/16 (0%)]      Loss: 0.322214
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 13 [0/16 (0%)]      Loss: 0.271227
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 14 [0/16 (0%)]      Loss: 0.233541
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 15 [0/16 (0%)]      Loss: 0.203627
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 16 [0/16 (0%)]      Loss: 0.184032
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 17 [0/16 (0%)]      Loss: 0.165417
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 18 [0/16 (0%)]      Loss: 0.149641
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 19 [0/16 (0%)]      Loss: 0.146744
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 20 [0/16 (0%)]      Loss: 0.133540
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 21 [0/16 (0%)]      Loss: 0.122409
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 22 [0/16 (0%)]      Loss: 0.117060
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 23 [0/16 (0%)]      Loss: 0.106974
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 24 [0/16 (0%)]      Loss: 0.100520
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 25 [0/16 (0%)]      Loss: 0.097498
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 26 [0/16 (0%)]      Loss: 0.088612
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 27 [0/16 (0%)]      Loss: 0.084177
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 28 [0/16 (0%)]      Loss: 0.084024
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 29 [0/16 (0%)]      Loss: 0.082178
+train_loss: []
+voice signals and gt_voice signals shape
+torch.Size([16, 6, 220500])
+torch.Size([16, 6, 220500])
+Train Epoch: 30 [0/16 (0%)]      Loss: 0.077353
+train_loss: []

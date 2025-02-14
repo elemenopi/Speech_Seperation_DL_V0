@@ -1,0 +1,22 @@
+SPEED_OF_SOUND: 343.0
+FAR_FIELD_RADIUS: 3.0
+ALL_WINDOW_SIZES: [1.57079632679, 0.785398163397, 0.3926990816987, 0.1963495408494, 0.0981747704247]
+NUM_OF_ROOMS: 1
+learning_rate: 0.0003
+epochs: 40
+batch_size: 6
+start_epoch: 0
+root_data_folder: "/data"
+root_data_folder_vctk: "/data/DS_10283_3443/VCTK-Corpus-0.92/wav48_silence_trimmed"
+train_folder_Dataloader: "../OUTPUTS_DSI/OUTPUTS_BASIC_TRAIN"
+test_folder_Dataloader: "../OUTPUTS_DSI/OUTPUTS_TRAIN/TESTONE"
+train_folder: "OUTPUTS_DSI/OUTPUTS_TRAIN/OUTPUTS_3_NOBG/"
+test_folder: "OUTPUTS_DSI/OUTPUTS_TRAIN"
+pretrain_path: "checkpoints/cos/multimic_experiment/0_4layer.pt"
+checkpoints_path: "checkpoints/cos"
+min_room_x: 30
+min_room_y: 30
+min_room_z: 3
+max_room_x: 40
+max_room_y: 40
+max_room_z: 4

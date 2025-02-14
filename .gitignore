@@ -1,0 +1,62 @@
+# === 🚀 Exclude Libraries & Cache ===
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments (if any)
+venv/
+env/
+.venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE & editor config files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Logs and debugging files
+*.log
+*.out
+*.err
+
+# Git metadata (ensures we don't track unnecessary Git files)
+.git/
+
+# Python package manager caches
+pip-wheel-metadata/
+Pipfile.lock
+poetry.lock
+*.egg-info/
+dist/
+build/
+
+# Conda environment files (if applicable)
+conda-meta/
+pkgs/
+*.conda
+
+# Docker files (if using Docker)
+.dockerignore
+.docker/
+
+# Ignore large model checkpoint files
+train/*.pt
+checkpoints/*.pt
+checkpoints/*.th
+
+
+# WandB (if used for experiment tracking)
+wandb/
+wandb/latest-run/
+wandb/debug.log
+wandb/debug-internal.log
+
+# === ✅ Keep All Project-Generated Files ===
+!*

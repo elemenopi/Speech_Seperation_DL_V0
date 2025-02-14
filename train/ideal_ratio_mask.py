@@ -1,0 +1,120 @@
+import argparse
+import json
+import multiprocessing.dummy as mp
+import os
+import matplotlib.pyplot as plt
+import librosa.display
+from pathlib import Path
+
+import librosa
+import numpy as np
+import tqdm
+
+from scipy.signal import stft, istft
+
+from eval_utils import compute_sdr
+from eval import get_items
+from utils import check_valid_dir
+
+
+def compute_irm(gt, mix, alpha):
+    """
+    Computes the Ideal Ratio Mask SI-SDR
+    gt: (n_voices, n_channels, t)
+    mix: (n_channels, t)
+    """
+    n_voices = gt.shape[0]
+    nfft = 2048
+    hop = 1024
+    eps = np.finfo(np.float64).eps
+
+    N = mix.shape[-1] # number of samples
+    X = stft(mix, nperseg=nfft)[2]
+    (I, F, T) = X.shape # (6, nfft//2 +1, n_frame)
+
+    # Compute sources spectrograms
+    P = []
+    for gt_idx in range(n_voices):
+        P.append(np.abs(stft(gt[gt_idx], nperseg=nfft)[2]) ** alpha)
+        
+    # compute model as the sum of spectrograms
+    model = eps
+    for gt_idx in range(n_voices):
+        model += P[gt_idx]
+
+    # perform separation
+    estimates = []
+    for gt_idx in range(n_voices):
+        # Create a ratio Mask
+        mask = np.divide(np.abs(P[gt_idx]), model)
+        
+        # apply mask
+        Yj = np.multiply(X, mask)
+
+        target_estimate = istft(Yj)[1][:,:N]
+
+        estimates.append(target_estimate)
+
+    estimates = np.array(estimates) # (nvoice, 6, 6*sr)
+
+    # eval
+    eval_mix = np.repeat(mix[np.newaxis, :, :], n_voices, axis=0) # (nvoice, 6, 6*sr)
+    eval_gt = gt # (nvoice, 6, 6*sr)
+    eval_est = estimates
+
+    SDR_in = []
+    SDR_out = []
+    for i in range(n_voices):
+        SDR_in.append(compute_sdr(eval_gt[i], eval_mix[i], single_channel=True)) # scalar
+        SDR_out.append(compute_sdr(eval_gt[i], eval_est[i], single_channel=True)) # scalar
+
+    output = np.array([SDR_in, SDR_out]) # (2, nvoice)
+
+    return output
+
+
+def main(args):
+    all_dirs = sorted(list(Path(args.input_dir).glob('*[0-9]')))
+    all_dirs = [x for x in all_dirs if check_valid_dir(x, args.n_voices)]
+
+    all_input_sdr = [0] * len(all_dirs)
+    all_output_sdr = [0] * len(all_dirs)
+
+    def evaluate_dir(idx):
+        curr_dir = all_dirs[idx]
+        # Loads the data
+        mixed_data, gt = get_items(curr_dir, args)
+        gt = np.array([x.data for x in gt])
+        output = compute_irm(gt, mixed_data, alpha=args.alpha)
+        all_input_sdr[idx] = output[0]
+        all_output_sdr[idx] = output[1]
+        print("Running median SDRi: ",
+              np.median(np.array(all_output_sdr[:idx+1]) - np.array(all_input_sdr[:idx+1])))
+
+    for i in range(len(all_dirs)):
+        evaluate_dir(i)
+    print("Median SI-SDRi: ",
+          np.median(np.array(all_output_sdr).flatten() - np.array(all_input_sdr).flatten()))
+
+    np.save("IBM_{}voices_{}kHz.npy".format(args.n_voices, args.sr),
+            np.array([np.array(all_input_sdr).flatten(), np.array(all_output_sdr).flatten()]))
+
+
+
+
+class Args:
+    def __init__(self):
+        self.input_dir = '/app/gannot-lab-UG/ilya_tomer/OUTPUTS/OUTPUTS_BASIC_TRAIN/eval_sisdr_2410_bg'  # Replace with actual path
+
+        self.sr = 44100
+        self.n_channels = 6
+        self.n_workers = 8
+        self.n_voices = 2
+        self.alpha = 1 #tocheck
+
+
+
+
+if __name__ == '__main__':
+    args = Args()
+    main(args)

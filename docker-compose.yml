@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  audio-db:
+    image: audio-db
+    build:
+      context: .
+    volumes:
+      - /dsi/gannot-lab1/datasets/LibriSpeech/LibriSpeech:/data
+      - /dsi/gannot-lab1/projects_2024/Ilya_Tomer/OUTPUTS:/app/OUTPUTS/OUTPUTS_TRAIN
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    tty: true
